@@ -1,0 +1,55 @@
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    background: url(./images/bgCloud.png);
+    animation: animation 10s linear infinite;
+    opacity: .6;
+}
+
+.wave:before {
+    content: '';
+    width: 100%;
+    height: 100;
+    top: 0;
+    left: 0;
+    background: url(./images/bgCloud.png);
+    opacity: .4;
+    position: absolute;
+    animation: animation-reverse 10s linear infinite;
+}
+
+.wave:after {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    background: url(./images/bgCloud.png);
+    opacity: .6;
+    position: absolute;
+    animation: animation-reverse 20s linear infinite;
+    animation-delay: -5s;
+}
+
+@keyframes animation {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 100vw;
+    }
+}
+
+@keyframes animation-reverse {
+    100% {
+        background-position: 0;
+    }
+
+    0% {
+        background-position: 100vw;
+    }
+}
