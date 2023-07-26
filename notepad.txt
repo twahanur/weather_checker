@@ -1,0 +1,2 @@
+weather api = 016227cbecac4e31a0185302232407
+openweather api = e35a2dd1fca0e0c9832e24f5939ea1f6
